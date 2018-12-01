@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name         Dark GoDoc
+@namespace    github.com/acomagu/dark-godoc
+@version      1.0.0
+@license      unlicense
+@preprocessor default
+@var color main-bg "Background Color" #111111
+@var color panel-bg "Panel Background Color" #0a0a0a
+@var color link "Link Color" #5566ff
+==/UserStyle== */
+
+@-moz-document domain('godoc.org') {
+  body, pre, code {
+    color: #bbb;
+  }
+  body {
+    background: var(--main-bg);
+  }
+  pre {
+    background: var(--panel-bg);
+    border: #000;
+    color: #bababa;
+  }
+  pre .com {
+    color: #1f910d;
+  }
+  .highlighted {
+    background: #223;
+  }
+  .jumbotron, .panel {
+    background: var(--panel-bg);
+    color: #eee;
+    border: #0a0a0a;
+  }
+  .navbar-default, #x-footer, .form-control {
+    background: #0000;
+    border: none;
+  }
+  .form-control {
+    background: var(--panel-bg);
+    border: none;
+  }
+  #x-projnav {
+    background: var(--panel-bg);
+  }
+  .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 1px solid #222;
+  }
+  a {
+    color: var(--link);
+  }
+}
